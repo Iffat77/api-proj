@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db:seed": "node seed/data.js"
   },
   "repository": {
     "type": "git",
@@ -13,11 +15,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Iffat77/api-proj/issues"
   },
   "homepage": "https://github.com/Iffat77/api-proj#readme",
   "dependencies": {
+    "axios": "^0.26.1",
+    "chalk": "^5.0.1",
+    "cors": "^2.8.5",
     "express": "^4.17.3",
     "mongoose": "^6.2.8"
   },
