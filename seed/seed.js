@@ -1,5 +1,4 @@
 import db from "../db/connection.js";
-import mongoose from "mongoose"
 import Link from "../models/schema.js"
 import links from "./nasaPotd.json" assert{type: "json"}
 
