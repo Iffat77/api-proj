@@ -17,6 +17,7 @@
       example  http://localhost:3000/api/links/62538e770dda2db318e55e81
  -  `/links/title/title` to get by specific title <br>
       example http://localhost:3000/api/links/title/Exploring%20the%20Antennae
+      - NOTE! (%20) is there to fill in blank space in the url 
  -  `/links/date/date` to get by specific date <br>
       example http://localhost:3000/api/links/date/2022-03-31T04:00:00.000Z
 
