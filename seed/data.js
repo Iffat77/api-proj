@@ -6,7 +6,7 @@ import links from "./nasaPotd.json" assert{type: "json"}
 
 const insertData = async () => {
   // reset database
-  db.dropDatabase();
+  
 
   // insert links into database
   await Link.insertMany(links);
