@@ -27,6 +27,38 @@ export const getLink = async (request, response) => {
   }
 };
 
+export const getLinkTitle = async (request, response) => {
+  try {
+    const { title } = request.params;
+    const link = await Link.findOne({ title });
+
+    if (link) {
+      return response.json(link);
+    }
+
+    response.status(400).json({ message: "Potd not found!" });
+  } catch (error) {
+    console.log(error);
+    response.status(500).json({ error: error.message });
+  }
+};
+
+export const getLinkDate = async (request, response) => {
+  try {
+    const { date } = request.params;
+    const link = await Link.findOne({ date });
+
+    if (link) {
+      return response.json(link);
+    }
+
+    response.status(400).json({ message: "Potd not found!" });
+  } catch (error) {
+    console.log(error);
+    response.status(500).json({ error: error.message });
+  }
+};
+
 export const createLink = async (request, response) => {
   try {
     const link = new Link(request.body);

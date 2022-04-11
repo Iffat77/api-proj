@@ -8,13 +8,19 @@
 
 ## API Documentation
 
-- The base URL will be <link>https://apotd-api.herokuapp.com/api/links</link>
+- The base URL will be <link>https://apotd-api.herokuapp.com/api/</link>
 
-- <b>Endpoints </b>
+ <b>Endpoints </b>
 
-  `/links` to get all links from apotd archive
-  `/links/id` to get single apotd 
-  
+ -  `/links` to get all links from apotd archive
+ -  `/links/id` to get single apotd <br>
+      example  http://localhost:3000/api/links/62538e770dda2db318e55e81
+ -  `/links/title/title` to get by specific title <br>
+      example http://localhost:3000/api/links/title/Exploring%20the%20Antennae
+ -  `/links/date/date` to get by specific date <br>
+      example http://localhost:3000/api/links/date/2022-03-31T04:00:00.000Z
+
+
 - Model
 
   Models are represented as such 
