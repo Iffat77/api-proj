@@ -8,7 +8,7 @@
 
 ## API Documentation
 
-- The base URL will be <link>https://apotd-api.herokuapp.com/api/</link>
+- The base URL will be <link>https://apotd-api.herokuapp.com/api/links</link>
 
 - <b>Endpoints </b>
 
