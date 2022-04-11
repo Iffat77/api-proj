@@ -4,6 +4,7 @@ import routes from "./routes/index.js";
 import express from "express";
 import cors from "cors";
 import chalk from "chalk";
+import logger from "morgan";
 
 
 const app = express();
